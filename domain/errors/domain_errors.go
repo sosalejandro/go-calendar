@@ -20,9 +20,29 @@ var (
 	ErrInvalidTask = errors.New("invalid task")
 	// ErrInvalidDay is returned when a day is invalid
 	ErrInvalidDay = errors.New("invalid day")
+	// ErrInvalidMonth is returned when a month is invalid
+	ErrInvalidMonth = errors.New("invalid month")
+	// ErrInvalidYear is returned when a year is invalid
+	ErrInvalidYear = errors.New("invalid year")
+	// ErrInvalidTaskID is returned when a task ID is invalid
+	ErrInvalidTaskID = errors.New("invalid task ID")
 )
 
 var (
 	// ErrTaskCannotBeNil is returned when a task is nil
 	ErrTaskCannotBeNil = errors.New("task is nil")
+)
+
+var (
+	// ErrDayNotFound is returned when a day is not found
+	ErrDayNotFound = errors.New("day not found")
+	// ErrTaskNotFound is returned when a task is not found
+	ErrTaskNotFound = errors.New("task not found")
+)
+
+var (
+	// ErrAddDay is returned when a day cannot be added
+	ErrAddDay = errors.New("cannot add day")
+	// ErrAddMonth is returned when a month cannot be added
+	ErrAddMonth = errors.New("cannot add month")
 )
